@@ -1,0 +1,13 @@
+<h1>HARE KRISHNA</h1>
+<h3>Name : {{data.name}}</h3>
+<h3>Email : {{data.email}}</h3>
+<h3>Age : {{data.age}}</h3>
+<h3>Chanting : {{data.chant}}</h3>
+<h3>Inititation :{% if data.initiation %}
+    Yes
+    {% else %}
+    No
+    {% endif %}</h3>
+<h3>Other : {{data.text}}</h3>
+<a href={% url 'ListView' %}>back</a>
+<hr/>

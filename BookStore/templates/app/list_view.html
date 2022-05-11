@@ -1,0 +1,11 @@
+<h1>HARE KRSNA</h1>
+{% for data in dataset %}
+    <p>{{data}} : 
+        <a href="{% url 'DetailView' data.id %}">See</a> 
+        <a href="{% url 'UpdateView' data.pk %}">Update</a>
+        <a href="{% url 'DeleteView' data.id %}">Delete</a>
+    </p>
+    <hr>
+{% endfor %}
+<a href="{% url 'CreateView' %}">Add Devotee</a>
+    

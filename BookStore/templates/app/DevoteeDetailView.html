@@ -1,0 +1,9 @@
+<h1>RAHDE SHYAM</h1>
+{% comment %} {{form.as_p}} {% endcomment %}
+<form method='POST'>
+    {% csrf_token %}
+    You Selected {{object}}.<br>
+    Are You Sure? Press Confirm to delete.
+<input type='submit' value='Confirm'>
+</form>
+<a href="{% url 'ListView' %}">Cancel</a>
