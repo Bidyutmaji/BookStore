@@ -31,7 +31,7 @@ def bookUpdate(request, id):
             try:  
                 form.save() 
                 model = form.instance
-                return redirect('/book-list')  
+                return redirect('book-list')  
             except Exception as e: 
                 pass    
     return render(request,'book-update.html',{'form':form})  
